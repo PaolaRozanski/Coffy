@@ -1,0 +1,58 @@
+:root {
+  --espresso: #2c1810;
+  --roast: #6b4423;
+  --roast-light: #8a5a35;
+  --cream: #f6eee1;
+  --cream-dark: #ece0cc;
+  --gold: #c9962e;
+  --gold-dark: #a6791e;
+  --green: #4f6f52;
+  --red-cherry: #a6462a;
+  --text: #2c1810;
+  --text-soft: #6b5c4d;
+  --radius: 14px;
+  --shadow: 0 8px 24px rgba(44, 24, 16, 0.12);
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-body: 'Work Sans', 'Segoe UI', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--text);
+  background: var(--cream);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 26px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.15s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-primary { background: var(--gold); color: var(--espresso); }
+.btn-primary:hover { background: var(--gold-dark); }
+.btn-outline { background: transparent; color: var(--cream); border: 2px solid var(--cream); }
